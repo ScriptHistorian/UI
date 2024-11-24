@@ -28,6 +28,5 @@ ImageButton.Visible = true
 local VIM = game:GetService("VirtualInputManager")
 
 ImageButton.Activated:Connect(function()
-    print("toggle icon")
     VIM:SendKeyEvent(true, Enum.KeyCode.LeftControl, false, nil)
 end)
